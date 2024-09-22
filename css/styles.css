@@ -1,3 +1,65 @@
+/* Layout styling */
+
+main {
+  padding-top: 203px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:visited {
+  color: #000000;
+}
+
+nav > ul > li > a:hover {
+  color: #616161;
+}
+
+nav > ul > li > a:active {
+  color: #000000;
+}
+
+#hero {
+  background-color: #c0c0c0;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 body {
     background-color: rgb(255, 255, 255);
     font-family: 'Merriweather', sans-serif;
@@ -7,6 +69,30 @@ body {
     color: #000000;
   }
 
+header {
+    background-color: #c0c0c0;
+    padding: 10px 0;
+    margin: 0px;
+    border-bottom: 1px solid #4a4a4a;
+    text-align: center;
+    position: fixed;
+
+    /*start ------------*/
+    width: [object Object]px; 
+    height: [object Object]px; 
+    background: #c0c0c0; 
+    border: solid #BDBDBD 3px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
+  }
+  
+  selector {
+    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+    position: relative;
+    float: right;
+  }
+  
   img {
     width: 100%;
   }
