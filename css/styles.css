@@ -1,7 +1,7 @@
 /* Layout styling */
 
 main {
-  padding-top: 203px;
+  padding-top: 151.81px;
 }
 
 .container {
@@ -14,6 +14,12 @@ main {
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #hero h1 {
@@ -31,7 +37,6 @@ nav > ul {
 
 nav > ul > li {
   display: inline-block;
-  width: 100%;
 }
 
 nav > ul > li > a {
@@ -58,16 +63,21 @@ nav > ul > li > a:active {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
 }
 
 body {
     background-color: rgb(255, 255, 255);
     font-family: 'Merriweather', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 18px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #000000;
-  }
+}
 
 header {
     background-color: #c0c0c0;
@@ -76,26 +86,19 @@ header {
     border-bottom: 1px solid #4a4a4a;
     text-align: center;
     position: fixed;
-
-    /*start ------------*/
-    width: [object Object]px; 
-    height: [object Object]px; 
+    width: 100%;
     background: #c0c0c0; 
     border: solid #BDBDBD 3px; 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
     -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
-  }
-  
-  selector {
-    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-    position: relative;
-    float: right;
-  }
+}
   
   img {
     width: 100%;
-  }
+    max-width: 100%;
+    height: auto;
+}
 
   .merriweather-light {
     font-family: "Merriweather", serif;
@@ -165,7 +168,7 @@ header {
   h4 {
     font-size: 1.43em;
     font-weight: 400;
-  }
+}
 
  a {
     color: rgb(128, 34, 34);
@@ -179,7 +182,7 @@ header {
     text-decoration: underline; /* Underlining when hovering over a link */
   }
   a:active { /* selected link */
-    color: #000000;
+    color: #ffffff;
   }
   a:hover,
 a:focus {
@@ -189,7 +192,7 @@ a:focus {
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: rgb(128, 34, 34);
+    background-color: rgb(112, 0, 0);
     color: #ffffff; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
@@ -199,7 +202,6 @@ a:focus {
   }
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
   }
   .button.contact {
     background-color: transparent;
@@ -208,6 +210,75 @@ a:focus {
     border: 2px solid #000000;
   }
   .button.contact:hover {
-    background-color: rgb(128, 34, 34);
+    background-color: rgb(112, 0, 0);
     color: #ffffff;
   }
+
+  @media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+ 
+  .col-md-6 {
+    width: 50%;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  #about-page h3 { margin-top: 0;}
+}
+  
+  @media only screen and (min-width: 1024px) {
+    main {
+      padding-top: 108.02px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+  #about-page h3 { margin-top: 0;}
+  }
+  
+  @media only screen and (min-width: 1440px) {
+  }
+  
+@keyframes plane {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.plane {
+  animation: 30s plane infinite alternate linear;
+}
+
