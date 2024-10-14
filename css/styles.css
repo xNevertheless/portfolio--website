@@ -1,7 +1,7 @@
 /* Layout styling */
 
 main {
-  padding-top: 71.17px;
+  padding-top: 51.17px;
 }
 
 .container {
@@ -89,7 +89,7 @@ nav > ul > li > a:active {
 }
 
 #hero {
-  background-color: #c0c0c0;
+  background-image: linear-gradient(gray, white);
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -103,14 +103,14 @@ nav > ul > li > a:active {
 body {
     background-color: rgb(255, 255, 255);
     font-family: 'Merriweather', sans-serif;
-    font-size: 18px; /* Sets the font size to 16px */
+    font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #000000;
 }
 
 header {
-    background-color: #c0c0c0;
+    background-color: #c0c0c0
     padding: 10px 0;
     margin: 0px;
     border-bottom: 1px solid #4a4a4a;
@@ -121,6 +121,10 @@ header {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
     -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
+}
+
+footer {
+  background-image: linear-gradient(white, gray)
 }
   
   img {
