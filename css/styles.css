@@ -1,7 +1,7 @@
 /* Layout styling */
 
 main {
-  padding-top: 151.81px;
+  padding-top: 71.17px;
 }
 
 .container {
@@ -27,16 +27,13 @@ main {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -56,6 +53,39 @@ nav > ul > li > a:hover {
 
 nav > ul > li > a:active {
   color: #000000;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgb(128, 34, 34);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -84,7 +114,6 @@ header {
     padding: 10px 0;
     margin: 0px;
     border-bottom: 1px solid #4a4a4a;
-    text-align: center;
     position: fixed;
     width: 100%;
     background: #c0c0c0; 
@@ -224,7 +253,20 @@ a:focus {
     float: right;
     margin-top: 4px;
   }
- 
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -251,12 +293,27 @@ a:focus {
       text-align: unset;
       padding: 20px 0 13px;
     }
+    
+    .logo {
+      min-width: 641px;
+    }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
+  
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+nav > ul > li {
+  display: inline-block;
+}
 
   .col-lg-5 {
     width: 41.66%;
@@ -282,3 +339,7 @@ a:focus {
   animation: 30s plane infinite alternate linear;
 }
 
+.social {
+  height: 80px;
+  width: auto;
+}
