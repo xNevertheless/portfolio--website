@@ -298,10 +298,6 @@ a:focus {
       text-align: unset;
       padding: 20px 0 13px;
     }
-    
-    .logo {
-      max-width: 300px;
-    }
 
   nav {
     width: auto;
