@@ -300,7 +300,7 @@ a:focus {
     }
     
     .logo {
-      min-width: 300px;
+      max-width: 300px;
     }
 
   nav {
@@ -333,16 +333,6 @@ nav > ul > li {
   #about-page h3 { margin-top: 0;}
   }
   
-  @media only screen and (min-width: 1440px) {
-  }
-  
-@keyframes plane {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-.plane {
-  animation: 30s plane infinite alternate linear;
-}
 
 .social {
   height: 80px;
