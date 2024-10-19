@@ -81,7 +81,6 @@ nav > ul > li > a:active {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgb(128, 34, 34);
 }
 
 .navtoggle.responsive li:last-child  {
@@ -111,27 +110,48 @@ body {
 }
 
 header {
-    background-color: #c0c0c0;
+    background-color: #f1f1f1;
     padding: 10px 0;
     margin: 0px;
     border-bottom: 1px solid #4a4a4a;
     position: fixed;
     width: 100%;
-    background: #c0c0c0; 
-    border: solid #BDBDBD 3px; 
+    background: #f1f1f1; 
+    border: solid #BDBDBD 1px; 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
     -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
 }
 
 footer {
-  background-image: linear-gradient(white, gray)
+  background-color: #f1f1f1;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
 }
   
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
   .merriweather-light {
@@ -339,3 +359,4 @@ nav > ul > li {
   #about-page h3 { margin-top: 0;}
   }
 }
+  
