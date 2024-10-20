@@ -93,6 +93,7 @@ nav > ul > li > a:active {
   display: inline-block;
   width: 100%;
   text-align: center;
+  border-radius: 8px;
 }
 
 #hero span {
@@ -123,6 +124,12 @@ header {
     -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ; 
 }
 
+/* Solid border */
+hr.solid {
+  border-top: 1px solid #bbb;
+  max-width: 1200px;
+}
+
 footer {
   background-color: #f1f1f1;
 }
@@ -148,11 +155,6 @@ img {
   border-radius: 8px;
 }
 
-.responsive {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
 
   .merriweather-light {
     font-family: "Merriweather", serif;
